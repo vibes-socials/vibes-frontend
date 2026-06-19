@@ -29,6 +29,7 @@ export default function Home() {
             fill
             className="object-cover object-center md:object-top"
             priority
+            sizes="100vw"
           />
         </div>
 
@@ -83,17 +84,17 @@ export default function Home() {
           
           {/* Left Coin */}
           <div className="absolute left-[5%] md:left-[15%] top-10 md:top-32 w-16 h-16 md:w-32 md:h-32 rotate-[-20deg] drop-shadow-2xl z-20 hover:scale-110 transition-transform">
-            <Image src="/stellar.png" alt="Stellar" fill className="object-contain" />
+            <Image src="/stellar.png" alt="Stellar" fill className="object-contain" sizes="(max-width: 768px) 64px, 128px" />
           </div>
 
           {/* Phone */}
           <div className="relative w-[240px] md:w-[900px] h-[450px] md:h-[1200px] drop-shadow-2xl hover:scale-105 transition-transform duration-500 z-10">
-            <Image src="/phone.png" alt="Vibes App on Phone" fill className="object-contain object-top" />
+            <Image src="/phone.png" alt="Vibes App on Phone" fill className="object-contain object-top" sizes="(max-width: 768px) 240px, 900px" priority />
           </div>
 
           {/* Right Coin */}
           <div className="absolute right-[5%] md:right-[15%] top-20 md:top-56 w-16 h-16 md:w-32 md:h-32 rotate-[15deg] drop-shadow-2xl z-20 hover:scale-110 transition-transform">
-            <Image src="/usdc.png" alt="USDC" fill className="object-contain" />
+            <Image src="/usdc.png" alt="USDC" fill className="object-contain" sizes="(max-width: 768px) 64px, 128px" />
           </div>
 
         </div>
@@ -106,7 +107,7 @@ export default function Home() {
           <p className="text-xl font-medium">Send USDC instantly with near-zero fees. Use simple human usernames like @daniel, and keep the blockchain completely invisible.</p>
         </div>
         <div className="w-full md:w-1/2 relative h-[400px] md:h-[600px] rounded-[40px] overflow-hidden border-4 border-black">
-          <Image src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800&q=80" alt="Friends laughing" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800&q=80" alt="Friends laughing" fill className="object-cover" unoptimized />
         </div>
       </section>
 
@@ -125,13 +126,13 @@ export default function Home() {
 
           {/* Images */}
           <div className="h-[300px] md:h-[400px] relative rounded-[30px] border-4 border-black overflow-hidden mt-10 shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-2 transition-transform">
-            <Image src="https://images.unsplash.com/photo-1523301343968-6a6ebf63c672?w=800&q=80" alt="Group of friends" fill className="object-cover" />
+            <Image src="https://images.unsplash.com/photo-1523301343968-6a6ebf63c672?w=800&q=80" alt="Group of friends" fill className="object-cover" unoptimized />
           </div>
           <div className="h-[400px] md:h-[500px] relative rounded-[30px] border-4 border-black overflow-hidden shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-2 transition-transform">
-            <Image src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=800&q=80" alt="Picnic" fill className="object-cover" />
+            <Image src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=800&q=80" alt="Picnic" fill className="object-cover" unoptimized />
           </div>
           <div className="h-[300px] md:h-[400px] relative rounded-[30px] border-4 border-black overflow-hidden mt-20 shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:-translate-y-2 transition-transform">
-            <Image src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80" alt="Drinks" fill className="object-cover" />
+            <Image src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80" alt="Drinks" fill className="object-cover" unoptimized />
           </div>
           <div className="absolute -bottom-6 right-0 w-24 h-24 bg-blue-400 border-4 border-black rounded-full flex items-center justify-center text-2xl font-bold text-white z-10 rotate-[-15deg] shadow-[4px_4px_0_0_rgba(0,0,0,1)]">Chill</div>
         </div>
