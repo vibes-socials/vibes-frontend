@@ -62,11 +62,11 @@ export default function Home() {
       </section>
 
       {/* MEET YOUR VIBE TRIBE */}
-      <section className="py-20 flex flex-col items-center text-center px-6 relative">
+      <section className="pt-20 pb-0 flex flex-col items-center text-center px-6 relative">
         <h2 className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight mb-4">Social Meets Finance</h2>
         <p className="text-xl md:text-2xl mb-10 max-w-2xl font-medium">Where social interaction meets instant global payments. Earn, tip, and build your community seamlessly.</p>
 
-        <div className="flex flex-col items-center mb-20">
+        <div className="flex flex-col items-center mb-0 relative z-30">
           <div className="flex gap-4 opacity-50 mb-3">
             <button className="bg-black text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 cursor-not-allowed">
               <span className="text-xl">▶</span> Google Play
@@ -78,34 +78,24 @@ export default function Home() {
           <span className="text-sm font-bold tracking-wider uppercase text-gray-500">Coming Soon</span>
         </div>
 
-        {/* Floating coins */}
-        <div className="absolute left-10 md:left-40 top-1/2 w-24 h-24 rotate-[-20deg] drop-shadow-xl z-20 hover:scale-110 transition-transform">
-          <Image src="/stellar.png" alt="Stellar" fill className="object-contain" />
-        </div>
-        <div className="absolute right-10 md:right-40 top-1/3 w-24 h-24 rotate-[15deg] drop-shadow-xl z-20 hover:scale-110 transition-transform">
-          <Image src="/usdc.png" alt="USDC" fill className="object-contain" />
-        </div>
+        {/* Phone & Coins Container */}
+        <div className="relative w-full flex justify-center items-start h-[450px] md:h-[1100px] mt-8 md:mt-16 -mb-32 md:-mb-64">
+          
+          {/* Left Coin */}
+          <div className="absolute left-[5%] md:left-[15%] top-10 md:top-32 w-16 h-16 md:w-32 md:h-32 rotate-[-20deg] drop-shadow-2xl z-20 hover:scale-110 transition-transform">
+            <Image src="/stellar.png" alt="Stellar" fill className="object-contain" />
+          </div>
 
-        {/* Phones Collage */}
-        <div className="relative w-full max-w-4xl h-[400px] md:h-[600px] flex justify-center items-end mt-10">
-          {/* Left Phone */}
-          <div className="absolute left-[10%] md:left-[15%] bottom-0 w-[140px] md:w-[260px] h-[300px] md:h-[500px] bg-black rounded-[30px] md:rounded-[40px] border-4 border-black overflow-hidden rotate-[-10deg] shadow-2xl z-10">
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-1/3 h-4 bg-black rounded-b-xl z-20"></div>
-            <Image src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80" alt="Jane" fill className="object-cover" />
-            <div className="absolute top-8 left-4 text-white font-bold bg-black/30 px-2 py-1 rounded">Jane</div>
+          {/* Phone */}
+          <div className="relative w-[240px] md:w-[900px] h-[450px] md:h-[1200px] drop-shadow-2xl hover:scale-105 transition-transform duration-500 z-10">
+            <Image src="/phone.png" alt="Vibes App on Phone" fill className="object-contain object-top" />
           </div>
-          {/* Right Phone */}
-          <div className="absolute right-[10%] md:right-[15%] bottom-0 w-[140px] md:w-[260px] h-[300px] md:h-[500px] bg-black rounded-[30px] md:rounded-[40px] border-4 border-black overflow-hidden rotate-[10deg] shadow-2xl z-10">
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-1/3 h-4 bg-black rounded-b-xl z-20"></div>
-            <Image src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Leslie" fill className="object-cover" />
-            <div className="absolute top-8 left-4 text-white font-bold bg-black/30 px-2 py-1 rounded">Leslie</div>
+
+          {/* Right Coin */}
+          <div className="absolute right-[5%] md:right-[15%] top-20 md:top-56 w-16 h-16 md:w-32 md:h-32 rotate-[15deg] drop-shadow-2xl z-20 hover:scale-110 transition-transform">
+            <Image src="/usdc.png" alt="USDC" fill className="object-contain" />
           </div>
-          {/* Center Phone */}
-          <div className="absolute bottom-10 md:bottom-20 w-[160px] md:w-[300px] h-[340px] md:h-[560px] bg-black rounded-[30px] md:rounded-[45px] border-[6px] border-black overflow-hidden shadow-2xl z-20">
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-black rounded-b-xl z-20"></div>
-            <Image src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=80" alt="Stephine" fill className="object-cover" />
-            <div className="absolute top-8 left-4 text-white font-bold text-xl drop-shadow-md">Stephine</div>
-          </div>
+
         </div>
       </section>
 
